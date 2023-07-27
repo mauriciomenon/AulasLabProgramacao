@@ -1,0 +1,23 @@
+graph TB
+A[Início]
+B[Solicitar sequência de caracteres]
+C[Inserir caracteres na lista]
+D[Imprimir caracteres inseridos]
+E[Solicitar posição para consulta]
+F[Verificar se a posição é válida]
+G[Exibir mensagem de posição inválida]
+H[Consultar item na posição]
+I[Exibir item encontrado]
+J[Limpar a lista]
+K[Fim]
+
+A --> B
+B --> C
+C --> D
+D --> E
+E --> F
+F -- Não --> G
+F -- Sim --> H
+H --> I
+G & I --> J
+J --> K
